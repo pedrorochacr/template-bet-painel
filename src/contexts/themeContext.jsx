@@ -4,21 +4,21 @@ import { useTemplateVal } from '@dsplay/react-template-utils';
 
 export const ThemeContext = createContext({
   globalTheme: {
-    primaryColor: '',
-    secondaryColor: '',
+    backgroundColor: '',
+    fontColor: '',
   },
 });
 
 const ThemeContextParent = (props) => {
-  const primary = useTemplateVal('primaryColor');
-  const secondary = useTemplateVal('secondaryColor');
+  const background = useTemplateVal('backgroundColor');
+  const font = useTemplateVal('fontColor');
 
   const { children } = props;
 
   const value = {
     globalTheme: {
-      primaryColor: primary,
-      secondaryColor: secondary,
+      primaryColor: backgroundColor,
+      secondaryColor: fontColor,
     },
   };
 
