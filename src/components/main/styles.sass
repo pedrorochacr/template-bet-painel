@@ -1,5 +1,6 @@
 .imageArea
   width: 50%
+  height: 100%
 
 .betsInformations
   width: 50%
@@ -10,13 +11,56 @@
 img
   object-fit: cover
   width: 100%
-  height: auto
+  height: 100%
+
+span
+  margin-left: 4%
+
+.app
+  display: flex
+  flex-direction: row
+  height: 100vh
+  align-items: center
+
+h1
+  font-size: 4vw
+  font-weight: bold
+
+h2
+  font-size: 2.5vw
+  margin-top: 0px
+  font-weight: 400
+
+.data
+  align-self: flex-start
+  margin-left: 20%
+  display: flex
 
 
 @media only screen and (orientation: portrait)
-  .container-home
+  .app
     flex-direction: column
+  
+  .imageArea
+    height: 50%
+    width: 100%
+    
+  .betsInformations
+    margin-top: 7%
+    
+  h1
+    font-size: 7vw
 
-@media only screen and (max-width: 960px)
-  .container-home
-    flex-direction: column
+  h2
+    font-size: 5vw
+
+
+
+@media only screen and (min-width: 1920px)
+  .betsInformations
+    margin-top: 1%
+  h1
+    font-size: 5.5vw
+
+  h2
+    font-size: 3vw

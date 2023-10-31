@@ -17,8 +17,8 @@ const ThemeContextParent = (props) => {
 
   const value = {
     globalTheme: {
-      primaryColor: backgroundColor,
-      secondaryColor: fontColor,
+      primaryColor: background,
+      fontColor: font,
     },
   };
 

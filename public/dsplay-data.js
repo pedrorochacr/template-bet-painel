@@ -10,10 +10,15 @@ var dsplay_config = {
 
 var dsplay_media = {
   duration: 30000,
+  gameText: 'Apostas',
+  dozensText: 'Apostas',
+  quotasText: 'Apostas',
+  valueText: 'Apostas',
+  commentText: 'Apostas',
 };
 
 var dsplay_template = {
-  logo:'../test-assets/dsplay-logo.png',
+  logo:'../test-assets/Aposta-esportiva.webp',
   backgroundColor:'',
   fontColor:'#257a33',
 };
